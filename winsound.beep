@@ -1,0 +1,10 @@
+import winsound
+
+minfreq = 262
+maxfreq = 3951
+duration = 100
+
+while minfreq <= maxfreq:
+    winsound.Beep(minfreq, duration)
+    print("Frekuensi : "+ str(minfreq))
+    minfreq += 32
